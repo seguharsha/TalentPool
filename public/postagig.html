@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentPool Homepage Clone | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Icons Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+<style>
+    .content{
+        position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  padding: 0%;
+  margin: 0;
+  height: 10%;
+    }
+    .formcontent{
+      
+       width: 100%;
+       display: flex;
+       justify-content: center;
+        color: antiquewhite;
+    }
+    
+#gigname,#gigprice,#yourskills,#keywords,#userreview,#buttonsumbit,#imageaddress,#githublink{
+    width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  margin: 10px 0; /* Space around the input */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+}
+.card {
+  
+  top:130%;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        background-color: #f9f9f9;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .gig-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .gig-price {
+        font-size: 1.1em;
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .card-body {
+        margin-top: 10px;
+    }
+
+    .skills {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills li {
+        padding: 5px 0;
+        font-size: 1em;
+    }
+
+    .card-footer {
+        margin-top: 20px;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+    }
+
+    .review-and-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-review {
+        font-style: normal;
+        color: #555;
+    }
+
+    .github-button {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #24292e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9em;
+        transition: background-color 0.3s ease;
+    }
+
+    .github-button:hover {
+        background-color: #444;
+    }
+
+    p{
+      font-size: larger;
+      color:antiquewhite;
+      font-weight: 200;
+    }
+h2{
+  font-size: x-large;
+      color:antiquewhite;
+      font-weight: bolder;
+      margin: 5%;     
+}
+#resultdiv{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.github-button:hover, .profile-button:hover {
+    background-color: #444;
+}
+
+.profile-button {
+    background-color: #007bff;
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="images/TalentPool.svg" alt="TalentPool Logo">
+      </a>
+      <ul class="menu-links">
+        <li><a href="#">TalentPool Business</a></li>
+        <li><a href="./indexDev.html">Explore</a></li>
+        <li class="language-item">
+          <a href="#">
+            <span class="material-symbols-outlined">language</span>
+            English
+          </a>
+        </li>
+        <li><a href="">Seller Account</a></li>
+        <li id="pop"><a href="./indexDev.html"></a></li>
+        <li class="join-btn"><a href="Profile.html"> PROFILE</a></li>
+        
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h1>POST SOME SKILLS </h1>
+    
+      <div class="popular-tags">
+          Popular:
+          <ul class="tags">
+              <li><a href="#">Webite Design</a></li>
+              <li><a href="#">Logo Design</a></li>
+              <li><a href="#">WordPress</a></li>
+              <li><a href="#">AI Design</a></li>
+            </ul>
+        </div>
+        <div>   
+          <p><br>Your hands craft wonders, your mind spins gold,<br>
+            A story of expertise yet untold.<br>
+            Now is the time to let them see,<br>
+            The brilliance you hold, your mastery.<br><br>
+            
+            So share your craft, don't let it hide,<br>
+            Let your skills be your guiding pride.<br>
+            Scroll down below, take the leap,<br>
+            Post your gig, where passions meet.</p>
+            <h2>SCROLL DOWN TO POST YOUR GIG ! !</h2>
+        </div>
+    </div>
+</section>
+    <div class="formcontent">
+
+        <div id="innerform"> 
+            <label>Gig Name:</label><br>
+            <input type="text" id="gigname">
+            <br>
+            <label>Gig Price:</label><br>
+            <input type="text" id="gigprice">
+            <br>
+            <label>YOUR SKILLS</label><br>
+            <input type="text" id="yourskills">
+            <br>
+            <label>keywords(separated with space):</label><br>
+            <input type="text" id="keywords">
+            <br>
+            <label>Image addrress link:</label><br>
+            <input type="text" id="imageaddress">
+            <br>
+            <label>User Reviews</label><br>
+            <input type="text" id="userreview">
+            <br>
+            <label>Github Link:</label><br>
+            <input type="text" id="githublink"><br>
+            <button type="submit" id="buttonsumbit" onclick="submitdoer()" class="submit">Submit</button>
+
+        </div>
+    </div>
+
+<div id="resultdiv">
+  <!-- <div class="card">
+    <div class="card-image">
+        <img src="data:image/jpeg;base64,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" alt="Gig Image">
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3 class="gig-name">Gig Name</h3>
+            <p class="gig-price">$100</p>
+        </div>
+        <div class="card-body">
+            <h4>Your Skills</h4>
+            <ul class="skills">
+                <li>• Skill 1</li>
+                <li>• Skill 2</li>
+                <li>• Skill 3</li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="review-and-button">
+                <div class="user-review">
+                    <h4>User Review</h4>
+                    <p>4.5/5</p>
+                </div>
+                <a href="https://github.com/your-profile" class="github-button" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+</div>
+  <script>
+    doer();
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    alert(`POST SOME GIGS ${JSON.parse(localStorage.getItem('users')).Username}`)
+    document.getElementById('pop').innerHTML=`<li id="pop"><a href="./indexDev.html">${JSON.parse(localStorage.getItem('users')).Username}</a><li>`;
+   let s=document.getElementById('buttonsumbit');
+  
+   function submitdoer(){
+    alert("Content being posted")
+    let  gigname=document.getElementById('gigname').value;
+    let  price=document.getElementById('gigprice').value;
+    let yourskills=document.getElementById('yourskills').value;
+    let  keywords=document.getElementById('keywords').value;
+    let  imageaddress=document.getElementById('imageaddress').value;
+    let  userreview=document.getElementById('userreview').value;
+    let  githublink=document.getElementById('githublink').value;
+    
+    let  newGig={Email:JSON.parse(localStorage.getItem('users')).Email,Gigname:gigname,Price:price,Skills:yourskills,Keywords:keywords,ImageAddress:imageaddress,UserReview:userreview,GitHubLink:githublink};
+     fetch('http://localhost:8080/Gigs', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newGig)
+    })
+    .then(response => response.json()).then().catch(err=>console.log(err))
+    document.getElementById('gigname').value="";
+    document.getElementById('gigprice').value="";
+    document.getElementById('yourskills').value="";
+    document.getElementById('keywords').value="";
+    document.getElementById('imageaddress').value="";
+    document.getElementById('userreview').value="";
+   document.getElementById('githublink').value="";
+    doer();
+  }
+
+   async function doer(){
+    document.getElementById('resultdiv').innerHTML="";
+      let dat=[];
+    await  fetch('http://localhost:8080/Gigs').then(response=>response.json()).then((data)=>{
+        dat=data;
+    }).catch(err=>console.log(err));
+    console.log(dat);
+    for(let i=0;i<dat.length;i++){
+      if(dat[i].Email==JSON.parse(localStorage.getItem('users')).Email){
+        let x=`<div class="card">
+    <div class="card-image">
+<img src="${dat[i].ImageAddress}">
+      </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3 class="gig-name">${dat[i].Gigname}</h3>
+            <p class="gig-price">${dat[i].Price}</p>
+        </div>
+        <div class="card-body">
+            <h4>Your Skills</h4>
+            <ul class="skills">
+                <li>• ${dat[i].Skills}</li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="review-and-button">
+                <div class="user-review">
+                    <h4>${dat[i].UserReview}/5</h4>
+                    <p></p>
+                </div>
+                <a href="${dat[i].GitHubLink}" class="github-button" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+document.getElementById('resultdiv').innerHTML+=x;
+      }
+    }
+    }
+   async function submitsearcher(){
+        let x=document.getElementById('searchbar').value;
+        if(x.length!=0){
+            let dat=[];
+         await   fetch('http://localhost:8080/Gigs').then(response=>response.json()).then((data)=>{
+                dat=data;
+            }).catch(err=>console.log(err));
+                let res=[];
+           for(let i=0;i<dat.length;i++){
+            let u=(dat[i].Keywords).split(" ");
+             if(u.includes(x.toLowerCase())){
+                 res.push(dat[i]);
+             }
+           }
+           console.log(res);
+        }
+    }
+    </script>
+</body>
+</html>
